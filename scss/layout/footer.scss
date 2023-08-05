@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:$footer;
+    font-size: 1rem;
+    margin-top: auto;
+    color: black;
+}
+
+ 
+ 
+  

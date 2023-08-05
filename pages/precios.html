@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amigo virtual" />
+  <meta name="keywords" content="Amistad, virtual, soledad" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Amistad Virtual</title>
+</head>
+
+<body class="conteiner">
+  <nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./presentacion.html">Quien Soy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./testimonio.html">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./precios.html">Precios y Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="promos">
+      <div class="cardPrecio" onclick="togglePrice(this)">
+        <div class="front">
+          <h2>Paquete Básico</h2>
+          <p><strong>Duración:</strong> 1 semana<br />
+            <strong>Comunicación:</strong> Mensajes de texto y correo electrónico.
+            <strong>Incluye:</strong> Charlas variadas, apoyo emocional.
+          </p>
+        </div>
+        <div class="back">
+          <h2>Precio: $5.000</h2>
+        </div>
+      </div>
+      <div class="cardPrecio" onclick="togglePrice(this)">
+        <div class="front">
+          <h2>Paquete Emocional</h2>
+          <p><strong>Duración:</strong> 1 mes</br>
+            <strong>Comunicación:</strong> Llamadas de voz y mensajes de texto ilimitados.</br>
+            <strong>Incluye:</strong> Apoyo emocional, consejos y motivación.
+          </p>
+        </div>
+        <div class="back">
+          <h2>Precio: $15.000</h2>
+        </div>
+      </div>
+    </div>
+    <div class="promos">
+      <div class="cardPrecio" onclick="togglePrice(this)">
+        <div class="front">
+          <h2>Paquete Total</h2>
+          <p><strong>Duración:</strong> 3 mes</br>
+            <strong>Comunicación:</strong> Llamadas de voz y mensajes de texto ilimitados.</br>
+            <strong>Incluye:</strong> Apoyo emocional, recomendaciones personalizadas,
+            seguimiento regular.
+          </p>
+        </div>
+        <div class="back">
+          <h2>Precio: $40.000</h2>
+        </div>
+      </div>
+      <div class="cardPrecio" onclick="togglePrice(this)">
+        <div class="front">
+          <h2>Paquete de Cartas</h2>
+          <p><strong>Duración:</strong> 1 mes</br>
+            <strong>Comunicación:</strong> Cartas escritas a mano enviadas por correo tradicional.</br>
+            <strong>Incluye:</strong> Cartas personalizadas llenas de palabras de aliento y amistad.
+          </p>
+        </div>
+        <div class="back">
+          <h2>Precio: $20.000</h2>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Derechos reservados Celeste Miguel.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

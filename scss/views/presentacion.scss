@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $footer;
+  }
+  
+  .right-to-center,
+  .left-to-center {
+    width: 100%;
+    padding-top: 20px;
+   
+    opacity: 0; // Inicialmente, los div estan ocultos
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .right-to-center {
+    animation: rightToCenterAnim 1s forwards; // Animación hacia el centro desde la derecha
+  }
+  
+  .left-to-center {
+    animation: leftToCenterAnim 1s forwards; // Animación hacia el centro desde la izquierda
+  }
+  
+  @keyframes rightToCenterAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes leftToCenterAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

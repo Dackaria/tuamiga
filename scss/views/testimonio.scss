@@ -1,0 +1,34 @@
+.bloque {
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    width: 95%;
+    margin: 15px;
+}
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px 10px 15px;
+    font-family: 'Pacifico', cursive;
+    background-color: $lavanda;
+}
+.card-body {
+    background-color: $amarillo-pálido;
+}
+
+
+//---------media Qwery----------
+
+@media screen and (min-width: 768px) {
+    .bloque {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 50%;
+        margin: 15px;
+    }
+  }
