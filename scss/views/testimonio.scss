@@ -3,6 +3,7 @@
     flex-direction: column;
 }
 .card {
+    @include borde;
     width: 95%;
     margin: 15px;
 }

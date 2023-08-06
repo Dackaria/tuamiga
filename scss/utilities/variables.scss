@@ -8,12 +8,21 @@ $amarillo-pálido: #FFF4B2;
 $azul-cielo: #B2E2FF;
 $lavanda: #E6B2FF;
 
-//
+// 
 $ancho-imagen-svg: 40px;
 $alto-imagen-svg: 40px;
 $angulo-final: 360;
 $duracion-animacion: 1s;
 
-//fuentes
-$inicio: 'Indie Flower', cursive; 
-$footer:  'Pacifico', cursive;
+//mapas
+$tipos-de-fuentes: (
+  titulo: 'Indie Flower', cursive, 
+  subtitulo: 'Pacifico', cursive,
+  cuerpo: 'Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif'
+);
+  
+
+//mixin
+@mixin borde {
+    border: 2px solid $lavanda;
+}

@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .form {
+
+
     .marcoInputs {
-        border: 2px solid $lavanda;
         border-radius: 8px;
         width: 70%;
-        margin: auto;
-        margin-top: 30px;
-        padding: 20px 20px 50px 20px;
+        //margin: auto;
         background-color: $rosado-suave;
+        @include borde;
 
         span {
-            font-family: $inicio;
+            font-family: map-get($tipos-de-fuentes, titulo);
         }
+
         .btn {
             background-color: $azul-cielo;
-            color:black;
+            color: black;
             margin: auto;
             float: right;
-            
+
         }
     }
 }
@@ -26,14 +27,16 @@
 .redes {
     display: flex;
     justify-content: center;
-    margin-top:15px;
+    margin-top: 10px;
     gap: 15px;
+
     img {
         width: $ancho-imagen-svg;
         height: $alto-imagen-svg;
         transition: transform $duracion-animacion ease-in-out;
     }
+
     img:hover {
         transform: rotate($angulo-final * 1deg); // Multiplicamos por 1deg para convertir el ángulo a grados
-      }
+    }
 }
