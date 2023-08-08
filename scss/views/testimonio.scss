@@ -1,18 +1,19 @@
 .bloque {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .card {
     @include borde;
     width: 95%;
-    margin: 15px;
+    margin: 15px 0;
 }
 .card-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 25px 10px 15px;
-    font-family: map-get($tipos-de-fuentes, titulo);
+    font-family: map-get($tipos-de-fuentes, subtitulo);
     background-color: $lavanda;
 }
 .card-body {
@@ -30,6 +31,6 @@
 
     .card {
         width: 50%;
-        margin: 15px;
+        margin: 10px;
     }
   }

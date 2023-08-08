@@ -3,12 +3,13 @@
 .promos {
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    margin-bottom: 25px;
     gap: 25px;
+    align-items: center;
 
     .cardPrecio {
         height: 250px;
-        width: 90%;
+        width: 95%;
         padding-top: 10px;
         perspective: 1000px;
         /* Ajustamos la perspectiva para dar un efecto 3D */
@@ -26,7 +27,6 @@
             /* Ocultamos la parte trasera de la tarjeta */
             @include borde;
             border-radius: 10px;
-            margin: 20px;
             padding: 20px;
 
             .h2 {
@@ -51,8 +51,6 @@
             transition: transform 0.5s;
             /* Agregamos una transición para el giro */
             background-color: $verde-menta;
-            margin: 20px;
-            padding: 20px;
         }
 
         &:hover {

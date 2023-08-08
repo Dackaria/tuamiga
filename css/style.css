@@ -45,6 +45,7 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,6 +55,7 @@ body {
     text-align: center;
     padding: 100px;
     height: 80vh;
+    align-items: center;
   }
 }
 .container {
@@ -102,11 +104,13 @@ body {
 .bloque {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .card {
+  border: 2px solid #E6B2FF;
   width: 95%;
-  margin: 15px;
+  margin: 15px 0;
 }
 
 .card-header {
@@ -129,18 +133,20 @@ body {
   }
   .card {
     width: 50%;
-    margin: 15px;
+    margin: 10px;
   }
 }
 .promos {
   display: flex;
   flex-direction: column;
-  margin: 25px;
+  margin-bottom: 25px;
   gap: 25px;
+  align-items: center;
 }
 .promos .cardPrecio {
-  height: 200px;
-  width: 90%;
+  height: 250px;
+  width: 95%;
+  padding-top: 10px;
   perspective: 1000px;
   /* Ajustamos la perspectiva para dar un efecto 3D */
 }
@@ -157,7 +163,6 @@ body {
   /* Ocultamos la parte trasera de la tarjeta */
   border: 2px solid #E6B2FF;
   border-radius: 10px;
-  margin: 20px;
   padding: 20px;
 }
 .promos .cardPrecio .front .h2,
@@ -179,8 +184,6 @@ body {
   transition: transform 0.5s;
   /* Agregamos una transición para el giro */
   background-color: #B2FFA9;
-  margin: 20px;
-  padding: 20px;
 }
 .promos .cardPrecio:hover .front {
   transform: rotateY(180deg);
@@ -221,14 +224,18 @@ body {
     padding: 20px;
   }
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form .marcoInputs {
-  border: 2px solid #E6B2FF;
   border-radius: 8px;
-  width: 70%;
-  margin: auto;
+  width: 95%;
   margin-top: 30px;
-  padding: 20px 20px 50px 20px;
   background-color: #FFC0CB;
+  padding: 10px;
+  border: 2px solid #E6B2FF;
 }
 .form .marcoInputs span {
   font-family: "Indie Flower", cursive;
@@ -243,7 +250,7 @@ body {
 .redes {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 10px;
   gap: 15px;
 }
 .redes img {
@@ -253,6 +260,13 @@ body {
 }
 .redes img:hover {
   transform: rotate(360deg);
+}
+
+@media screen and (min-width: 768px) {
+  .form .marcoInputs {
+    width: 70%;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

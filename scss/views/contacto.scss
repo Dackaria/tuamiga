@@ -2,12 +2,16 @@
 
 .form {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .marcoInputs {
         border-radius: 8px;
-        width: 70%;
-        //margin: auto;
+        width: 95%;
+        margin-top: 30px;
         background-color: $rosado-suave;
+        padding: 10px;
         @include borde;
 
         span {
@@ -38,5 +42,13 @@
 
     img:hover {
         transform: rotate($angulo-final * 1deg); // Multiplicamos por 1deg para convertir el ángulo a grados
+    }
+}
+
+//mediaQwery-------------------
+@media screen and (min-width: 768px) {
+    .form .marcoInputs {
+        width: 70%;
+        margin-top: 20px;
     }
 }
